@@ -8,7 +8,7 @@ public enum  IntegerConstant {
 
     private int value;
 
-    private IntegerConstant(int value){
+    IntegerConstant(int value){
         this.value = value;
     }
 

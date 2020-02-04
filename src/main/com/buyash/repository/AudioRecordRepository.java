@@ -13,5 +13,4 @@ public interface AudioRecordRepository {
 
     Set<AudioRecord> query(Specification specification);
 
-    //todo add update by specification method
 }
