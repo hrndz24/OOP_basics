@@ -5,5 +5,4 @@ target
 *.iml
 *.class
 *.jar
-*.war
-*.ear
+out
