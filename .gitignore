@@ -1,8 +1,7 @@
 target
-*/target
-*/*/target
 .idea
 *.iml
 *.class
 *.jar
 out
+src/main/com/buyash/Main.java
