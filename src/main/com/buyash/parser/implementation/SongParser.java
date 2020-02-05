@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 public class SongParser implements AudioRecordParser {
 
     private static final String SONG_REGEX =
-            "([0-9]+)\\|(.[^|]+)\\|([0-9]+\\.[0-9]{1,2})\\|([A-Z_]+)\\|(.[^|]+)\\|([A-Z_]+)\\|(.[^|]+)";
+            "\\d+\\|.[^|]+\\|\\d+\\.\\d{1,2}\\|[A-Z_]+\\|.[^|]+\\|[A-Z_]+\\|.[^|]+";
 
 
     @Override

@@ -5,6 +5,6 @@ import com.buyash.reader.AudioRecordReader;
 
 public interface AudioRecordFactory {
 
-    AudioRecordReader getReader();
-    AudioRecordParser getParser();
+    AudioRecordReader getRecordReader();
+    AudioRecordParser getRecordParser();
 }

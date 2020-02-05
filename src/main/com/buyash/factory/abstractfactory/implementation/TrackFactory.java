@@ -23,12 +23,12 @@ public class TrackFactory implements AudioRecordFactory {
     }
 
     @Override
-    public AudioRecordReader getReader() {
+    public AudioRecordReader getRecordReader() {
         return reader;
     }
 
     @Override
-    public AudioRecordParser getParser() {
+    public AudioRecordParser getRecordParser() {
         return parser;
     }
 }
