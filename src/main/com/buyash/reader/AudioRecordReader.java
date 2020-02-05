@@ -24,7 +24,7 @@ public class AudioRecordReader {
         this.filePath = filePath;
     }
 
-    public List<String> getAllLines() throws ReaderException {
+    public List<String> readAllLines() throws ReaderException {
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath))) {
             List<String> stringRecords = new ArrayList<>();
             String line;

@@ -5,8 +5,6 @@ import com.buyash.entity.AudioRecord;
 import com.buyash.entity.Disk;
 import com.buyash.entity.Track;
 import com.buyash.exception.ServiceException;
-import com.buyash.factory.RepositoryFactory;
-import com.buyash.repository.AudioRecordRepository;
 import com.buyash.validation.DiskValidator;
 
 import java.math.BigDecimal;
@@ -14,7 +12,6 @@ import java.util.List;
 
 public class DiskService {
 
-    private AudioRecordRepository audioRecordRepository = RepositoryFactory.getInstance().getAudioRecordRepository();
     private DiskValidator diskValidator = new DiskValidator();
 
     private static class SingletonHolder {

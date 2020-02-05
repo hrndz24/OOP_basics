@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 public class SpeechRecordParser implements AudioRecordParser {
 
     private static final String SPEECH_RECORD_REGEX =
-            "([0-9]+)\\|(.[^|]+)\\|([0-9]+\\.[0-9]{1,2})\\|(.[^|]+)";
+            "[0-9]+\\|.[^|]+\\|[0-9]+\\.[0-9]{1,2}\\|.[^|]+";
 
     @Override
     public AudioRecord parseLineToRecord(String line) throws ParserException {
