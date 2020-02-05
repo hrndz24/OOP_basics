@@ -1,6 +1,8 @@
 package com.buyash.reader;
 
 import com.buyash.exception.ReaderException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -11,6 +13,7 @@ import java.util.List;
 public class AudioRecordReader {
 
     private String filePath;
+    private static Logger logger = LogManager.getLogger();
 
     public AudioRecordReader(String filePath){
         this.filePath = filePath;
@@ -33,7 +36,7 @@ public class AudioRecordReader {
             }
             return stringRecords;
         } catch (IOException e) {
-            //todo log
+            logger.warn(e);
             throw new ReaderException(e);
         }
     }

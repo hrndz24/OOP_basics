@@ -5,3 +5,5 @@ target
 *.jar
 out
 src/main/com/buyash/Main.java
+logs
+logfile.txt
