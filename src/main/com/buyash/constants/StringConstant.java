@@ -7,14 +7,13 @@ public enum StringConstant {
     TRACKS_FILE("src/main/resources/records/tracks.txt"),
     DELIMITER("\\|");
 
-
     private String value;
 
-    StringConstant(String value){
+    StringConstant(String value) {
         this.value = value;
     }
 
-    public String getValue(){
+    public String getValue() {
         return value;
     }
 }

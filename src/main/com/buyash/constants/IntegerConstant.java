@@ -1,6 +1,6 @@
 package com.buyash.constants;
 
-public enum  IntegerConstant {
+public enum IntegerConstant {
 
     LENGTH_POSITION(0), TITLE_POSITION(1), SIZE_POSITION(2),
     INSTRUMENT_POSITION(3), COMPOSER_POSITION(4), STYLE_POSITION(5),
@@ -8,11 +8,11 @@ public enum  IntegerConstant {
 
     private int value;
 
-    IntegerConstant(int value){
+    IntegerConstant(int value) {
         this.value = value;
     }
 
-    public int getValue(){
+    public int getValue() {
         return value;
     }
 }

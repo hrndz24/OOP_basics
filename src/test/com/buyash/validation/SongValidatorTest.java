@@ -7,8 +7,9 @@ import org.junit.Test;
 public class SongValidatorTest {
 
     private SongValidator songValidator;
+
     @Before
-    public void initValidator(){
+    public void initValidator() {
         songValidator = new SongValidator();
     }
 

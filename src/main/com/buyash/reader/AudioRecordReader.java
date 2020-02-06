@@ -15,7 +15,7 @@ public class AudioRecordReader {
     private String filePath;
     private static Logger logger = LogManager.getLogger();
 
-    public AudioRecordReader(String filePath){
+    public AudioRecordReader(String filePath) {
         this.filePath = filePath;
     }
 

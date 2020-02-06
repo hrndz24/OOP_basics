@@ -126,7 +126,6 @@ public class Track extends AudioRecord {
 
     @Override
     public String toString() {
-
         return super.toString() + "|instrument: " + instrument
                 + "|composer: " + composer + "|style: " + style;
     }

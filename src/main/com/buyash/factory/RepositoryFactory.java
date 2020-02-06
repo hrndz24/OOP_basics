@@ -5,7 +5,7 @@ import com.buyash.repository.implementation.AudioRecordRepositoryImplementation;
 
 public class RepositoryFactory {
 
-    private AudioRecordRepository audioRecordRepository = new AudioRecordRepositoryImplementation();
+    private AudioRecordRepository audioRecordRepository = AudioRecordRepositoryImplementation.getInstance();
 
     private static class SingletonHolder {
         private static final RepositoryFactory INSTANCE = new RepositoryFactory();
@@ -18,7 +18,7 @@ public class RepositoryFactory {
         return SingletonHolder.INSTANCE;
     }
 
-    public AudioRecordRepository getAudioRecordRepository(){
+    public AudioRecordRepository getAudioRecordRepository() {
         return audioRecordRepository;
     }
 

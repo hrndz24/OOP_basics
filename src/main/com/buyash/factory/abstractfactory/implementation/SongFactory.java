@@ -15,9 +15,10 @@ public class SongFactory implements AudioRecordFactory {
         private static final SongFactory INSTANCE = new SongFactory();
     }
 
-    private SongFactory(){}
+    private SongFactory() {
+    }
 
-    public static SongFactory getInstance(){
+    public static SongFactory getInstance() {
         return SingletonHolder.INSTANCE;
     }
 

@@ -10,8 +10,9 @@ import java.math.BigDecimal;
 public class DiskValidatorTest {
 
     private DiskValidator diskValidator;
+
     @Before
-    public void initValidator(){
+    public void initValidator() {
         diskValidator = new DiskValidator();
     }
 

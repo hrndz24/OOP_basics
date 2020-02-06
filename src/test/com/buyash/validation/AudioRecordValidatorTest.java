@@ -9,8 +9,9 @@ import java.math.BigDecimal;
 public class AudioRecordValidatorTest {
 
     private AudioRecordValidator audioRecordValidator;
+
     @Before
-    public void initValidator(){
+    public void initValidator() {
         audioRecordValidator = new AudioRecordValidator();
     }
 
