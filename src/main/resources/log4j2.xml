@@ -16,10 +16,9 @@
     </Appenders>
 
     <Loggers>
-        <Root level = "all">
+        <Root level = "info">
             <Appender-ref ref =  "Console"/>
             <Appender-ref ref ="logfile"/>
         </Root>
-
     </Loggers>
 </Configuration>

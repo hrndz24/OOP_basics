@@ -3,9 +3,9 @@ package com.buyash.entity;
 import java.math.BigDecimal;
 
 public class Track extends AudioRecord {
-    private Instrument instrument;
-    private String composer;
-    private Style style;
+    protected Instrument instrument;
+    protected String composer;
+    protected Style style;
 
     public Track() {
     }
@@ -45,9 +45,9 @@ public class Track extends AudioRecord {
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + (getTitle() != null ? getTitle().hashCode() : 0);
-        result = (prime * result + getLengthInMilliseconds());
-        result = prime * result + (getSizeInMegabytes() != null ? getSizeInMegabytes().hashCode() : 0);
+        result = prime * result + (title != null ? title.hashCode() : 0);
+        result = (prime * result + lengthInMilliseconds);
+        result = prime * result + (sizeInMegabytes != null ? sizeInMegabytes.hashCode() : 0);
         result = prime * result + (composer != null ? composer.hashCode() : 0);
         result = prime * result + (style != null ? style.hashCode() : 0);
         result = prime * result + (instrument != null ? instrument.hashCode() : 0);
@@ -67,26 +67,26 @@ public class Track extends AudioRecord {
         }
 
         Track other = (Track) obj;
-        if (this.getTitle() == null) {
-            if (other.getTitle() != null) {
+        if (this.title == null) {
+            if (other.title != null) {
                 return false;
             }
         } else {
-            if (!this.getTitle().equals(other.getTitle())) {
+            if (!this.title.equals(other.title)) {
                 return false;
             }
         }
 
-        if (this.getLengthInMilliseconds() != other.getLengthInMilliseconds()) {
+        if (this.lengthInMilliseconds != other.lengthInMilliseconds) {
             return false;
         }
 
-        if (this.getSizeInMegabytes() == null) {
-            if (other.getSizeInMegabytes() != null) {
+        if (this.sizeInMegabytes == null) {
+            if (other.sizeInMegabytes != null) {
                 return false;
             }
         } else {
-            if (!this.getSizeInMegabytes().equals(other.getSizeInMegabytes())) {
+            if (!this.sizeInMegabytes.equals(other.sizeInMegabytes)) {
                 return false;
             }
         }

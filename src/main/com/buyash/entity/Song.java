@@ -6,6 +6,8 @@ public class Song extends Track {
 
     private String singer;
 
+    public Song(){}
+
     public Song(int length, String title, BigDecimal size, Instrument instrument, String composer, Style style, String singer) {
         super(length, title, size, instrument, composer, style);
         this.singer = singer;
@@ -41,56 +43,56 @@ public class Song extends Track {
         }
 
         Song other = (Song) obj;
-        if (this.getTitle() == null) {
-            if (other.getTitle() != null) {
+        if (this.title == null) {
+            if (other.title != null) {
                 return false;
             }
         } else {
-            if (!this.getTitle().equals(other.getTitle())) {
+            if (!this.title.equals(other.title)) {
                 return false;
             }
         }
 
-        if (this.getLengthInMilliseconds() != other.getLengthInMilliseconds()) {
+        if (this.lengthInMilliseconds != other.lengthInMilliseconds) {
             return false;
         }
 
-        if (this.getSizeInMegabytes() == null) {
-            if (other.getSizeInMegabytes() != null) {
+        if (this.sizeInMegabytes == null) {
+            if (other.sizeInMegabytes != null) {
                 return false;
             }
         } else {
-            if (!this.getSizeInMegabytes().equals(other.getSizeInMegabytes())) {
+            if (!this.sizeInMegabytes.equals(other.sizeInMegabytes)) {
                 return false;
             }
         }
 
-        if (this.getComposer() == null) {
-            if (other.getComposer() != null) {
+        if (this.composer == null) {
+            if (other.composer != null) {
                 return false;
             }
         } else {
-            if (!this.getComposer().equals(other.getComposer())) {
+            if (!this.composer.equals(other.composer)) {
                 return false;
             }
         }
 
-        if (this.getInstrument() == null) {
-            if (other.getInstrument() != null) {
+        if (this.instrument == null) {
+            if (other.instrument != null) {
                 return false;
             }
         } else {
-            if (!this.getInstrument().equals(other.getInstrument())) {
+            if (!this.instrument.equals(other.instrument)) {
                 return false;
             }
         }
 
-        if (this.getStyle() == null) {
-            if (other.getStyle() != null) {
+        if (this.style == null) {
+            if (other.style != null) {
                 return false;
             }
         } else {
-            if (!this.getStyle().equals(other.getStyle())) {
+            if (!this.style.equals(other.style)) {
                 return false;
             }
         }

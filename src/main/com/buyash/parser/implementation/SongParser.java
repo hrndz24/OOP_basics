@@ -36,6 +36,15 @@ public class SongParser implements AudioRecordParser {
         Style style = Style.valueOf(songInfo[IntegerConstant.STYLE_POSITION.getValue()]);
         String singer = songInfo[IntegerConstant.SINGER_POSITION.getValue()];
 
-        return new Song(length, title, size, instrument, composer, style, singer);
+        Song song = new Song();
+        song.setLengthInMilliseconds(length);
+        song.setTitle(title);
+        song.setSizeInMegabytes(size);
+        song.setInstrument(instrument);
+        song.setComposer(composer);
+        song.setStyle(style);
+        song.setSinger(singer);
+
+        return song;
     }
 }

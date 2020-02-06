@@ -31,6 +31,12 @@ public class SpeechRecordParser implements AudioRecordParser {
         BigDecimal size = BigDecimal.valueOf(Double.parseDouble(speechRecordInfo[IntegerConstant.SIZE_POSITION.getValue()]));
         String narrator = speechRecordInfo[IntegerConstant.NARRATOR_POSITION.getValue()];
 
-        return new SpeechRecord(length, title, size, narrator);
+        SpeechRecord speechRecord = new SpeechRecord();
+        speechRecord.setLengthInMilliseconds(length);
+        speechRecord.setTitle(title);
+        speechRecord.setSizeInMegabytes(size);
+        speechRecord.setNarrator(narrator);
+
+        return speechRecord;
     }
 }

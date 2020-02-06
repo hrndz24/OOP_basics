@@ -5,14 +5,14 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 public abstract class AudioRecord implements Serializable {
-    private int lengthInMilliseconds;
-    private String title;
-    private BigDecimal sizeInMegabytes;
+    protected int lengthInMilliseconds;
+    protected String title;
+    protected BigDecimal sizeInMegabytes;
 
     public AudioRecord() {
     }
 
-    public AudioRecord(int lengthInMilliseconds, String title, BigDecimal sizeInMegabytes) {
+    protected AudioRecord(int lengthInMilliseconds, String title, BigDecimal sizeInMegabytes) {
         this.lengthInMilliseconds = lengthInMilliseconds;
         this.title = title;
         this.sizeInMegabytes = sizeInMegabytes.setScale(2, RoundingMode.HALF_UP);

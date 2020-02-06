@@ -6,6 +6,9 @@ public class SpeechRecord extends AudioRecord {
 
     private String narrator;
 
+    public SpeechRecord() {
+    }
+
     public SpeechRecord(int length, String title, BigDecimal size, String narrator) {
         super(length, title, size);
         this.narrator = narrator;
@@ -34,26 +37,26 @@ public class SpeechRecord extends AudioRecord {
 
         SpeechRecord other = (SpeechRecord) obj;
 
-        if (this.getTitle() == null) {
-            if (other.getTitle() != null) {
+        if (this.title == null) {
+            if (other.title != null) {
                 return false;
             }
         } else {
-            if (!this.getTitle().equals(other.getTitle())) {
+            if (!this.title.equals(other.title)) {
                 return false;
             }
         }
 
-        if (this.getLengthInMilliseconds() != other.getLengthInMilliseconds()) {
+        if (this.lengthInMilliseconds != other.lengthInMilliseconds) {
             return false;
         }
 
-        if (this.getSizeInMegabytes() == null) {
-            if (other.getSizeInMegabytes() != null) {
+        if (this.sizeInMegabytes == null) {
+            if (other.sizeInMegabytes != null) {
                 return false;
             }
         } else {
-            if (!this.getSizeInMegabytes().equals(other.getSizeInMegabytes())) {
+            if (!this.sizeInMegabytes.equals(other.sizeInMegabytes)) {
                 return false;
             }
         }
@@ -75,9 +78,9 @@ public class SpeechRecord extends AudioRecord {
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + (getTitle() != null ? getTitle().hashCode() : 0);
-        result = prime * result + (getSizeInMegabytes() != null ? getSizeInMegabytes().hashCode() : 0);
-        result = (prime * result + getLengthInMilliseconds());
+        result = prime * result + (title != null ? title.hashCode() : 0);
+        result = prime * result + (sizeInMegabytes != null ? sizeInMegabytes.hashCode() : 0);
+        result = (prime * result + lengthInMilliseconds);
         result = prime * result + (narrator != null ? narrator.hashCode() : 0);
         return result;
     }

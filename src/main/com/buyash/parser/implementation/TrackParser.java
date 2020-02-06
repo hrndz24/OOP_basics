@@ -34,6 +34,14 @@ public class TrackParser implements AudioRecordParser {
         String composer = trackInfo[IntegerConstant.COMPOSER_POSITION.getValue()];
         Style style = Style.valueOf(trackInfo[IntegerConstant.STYLE_POSITION.getValue()]);
 
-        return new Track(length, title, size, instrument, composer, style);
+        Track track = new Track();
+        track.setLengthInMilliseconds(length);
+        track.setTitle(title);
+        track.setSizeInMegabytes(size);
+        track.setInstrument(instrument);
+        track.setComposer(composer);
+        track.setStyle(style);
+
+        return track;
     }
 }
