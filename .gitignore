@@ -4,6 +4,6 @@ target
 *.class
 *.jar
 out
-src/main/com/buyash/Main.java
+src/main/java/com/buyash/Main.java
 logs
 logfile.txt
