@@ -8,7 +8,7 @@
 
     <properties>
         <junitVersion>4.12</junitVersion>
-        <log4jVersion>2.13.2</log4jVersion>
+        <log4jVersion>2.15.0</log4jVersion>
         <mavenPluginVersion>3.8.1</mavenPluginVersion>
         <mavenCompilerSource>1.8</mavenCompilerSource>
         <mavenCompilerTarget>1.8</mavenCompilerTarget>
